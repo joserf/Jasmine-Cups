@@ -1,4 +1,4 @@
-JASmine WEB - CUPS - IP
+JASmine WEB - CUPS
 
 Esse tutorial foi realizado com a intenção de adicionar funcionalidades ao sistema já existente JASmine, que gera relatórios a partir das impressoras instaladas no CUPS.
 
