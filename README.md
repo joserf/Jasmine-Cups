@@ -148,7 +148,43 @@ Neste momento iremos editar o arquivo com as configurações de acesso a banco.
     $DB_pass="senha";
     $DB_db="print";
 
-5 - Configuração após reinicialização.
+5 - IonCube
+
+        cd /var/www
+
+        # wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
+
+        # tar xvfz ioncube_loaders_lin_x86-64.tar.gz
+
+        cd ioncube/
+
+        http://IP-DO-SERVIDOR/ioncube/loader-wizard.php
+
+Faça:
+
+        # cp /var/www/ioncube/ioncube_loader_lin_5.3.so /usr/lib/php5/20090626/
+
+Clique no inten 3;
+
+Save this 20-ioncube.ini file and put it in your ini files directory, /etc/php5/apache2/conf.d
+
+Faça o download do arquivo, e copie seu conteudo.
+
+zend_extension = /usr/lib/php5/20090626/ioncube_loader_lin_5.3.so
+
+Cole no arquivo abaixo:
+
+        # vim /etc/php5/apache2/conf.d/20-ioncube.ini
+
+        # service apache2 restart
+
+Teste o loader novamente na pagina, se tudo correu bem, continue.
+
+        cd ..
+        sudo rm -rf ioncube
+        sudo rm ioncube_loaders_lin_x86-64.tar.gz
+
+6 - Configuração após reinicialização.
 
     $ sudo vim /etc/restart.sh
 
@@ -174,7 +210,7 @@ Reinicie o sistema.
 
     $ sudo shutdown -r now
 
-6 - Instalando a impressora no servidor
+7 - Instalando a impressora no servidor.
 
 Acesse o CUPS:
 
