@@ -10,7 +10,7 @@ Versão atual:
         Impressoras;
         Servidores;
 
-Não serão abordadas: a instalação do sistema operacional e configuração de rede. 
+Não serão abordadas: a instalação do sistema operacional(Ubuntu 16.04) e configuração de rede. 
 
 Instalação
 
