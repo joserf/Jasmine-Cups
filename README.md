@@ -106,7 +106,7 @@ Agora vamos utilizar o script contido no arquivo JASmine-MySQL.
 
 Crie um usuário no MySQL para gerenciar o banco de impressão.
 
-    $ udo mysql -u root -p
+    $ sudo mysql -u root -p
     mysql> GRANT ALL ON print.* TO jasmine@localhost identified by 'senha';
     mysql> FLUSH PRIVILEGES;
     mysql> exit
