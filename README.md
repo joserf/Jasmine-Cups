@@ -178,7 +178,7 @@ Cole no arquivo abaixo:
 
         # service apache2 restart
 
-Teste o loader novamente na pagina, se tudo correu bem, continue.
+Teste o loader novamente na pagina (http://IP-DO-SERVIDOR/ioncube/), se tudo correu bem, continue.
 
         cd ..
         sudo rm -rf ioncube
